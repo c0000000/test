@@ -24,8 +24,11 @@ jobs:
       - run: npm run build
         working-directory: ./web-frontend/
       - name: Surge Deploy
+        env:
+          super_secret: ${{ secrets.MY_SURGE_TOKEN }}
         working-directory: ./web-frontend/
         run: | 
-          export SURGE_TOKEN=e05c0cc65b636ede2185c818b9f61d68
+          echo "questo è il super_secret ${super_secret}"
+          export SURGE_TOKEN=$super_secret
           surge ./dist/ uttermost-nose.surge.sh
       - run: echo "Fineeeeeeeeeeeeeeeeeeeeeeeeeeee"
