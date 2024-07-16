@@ -1,0 +1,48 @@
+.hero {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+.hero-section-search{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__title {
+    font-size: 64px;
+    padding-bottom: 2rem;
+}
+
+.hero__title-section {
+    display: inline;
+}
+
+
+.hero__search-input {
+    padding-inline: 20px;
+    width: 584px;
+    height: 56px;
+    border: 1px solid black;
+    font-size: 1.4rem;
+}
+
+.hero__search-input::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.hero__file-types {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.hero__file-type {
+    display: flex;
+    flex-direction: column;
+}

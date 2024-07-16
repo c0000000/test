@@ -1,0 +1,24 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 32px;
+}
+
+.navbar-link-logo{
+    width: 350px;
+    height: 90px;
+    border: 1px solid black;
+}
+.navbar-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: black;
+
+}
