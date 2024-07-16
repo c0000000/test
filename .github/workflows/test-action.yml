@@ -13,8 +13,8 @@ jobs:
       - run: surge --version
       - run: date >> README.md
       - run: | 
-          export SURGE_TOKEN=d6d019416c585ecfe65f98f905275673
-          surge . jumbled-motion.surge.sh
+          export SURGE_TOKEN=e05c0cc65b636ede2185c818b9f61d68
+          surge . uttermost-nose.surge.sh
       - name: Test run
         run: | 
           date
