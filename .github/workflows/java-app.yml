@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'java-app/**'
-      -'.github/workflows/java-app.yml'
+      - '.github/workflows/java-app.yml'
 jobs:
   building-java-app:
     runs-on: ubuntu-latest
