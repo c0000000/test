@@ -25,6 +25,6 @@ jobs:
           distribution: 'temurin'
           architecture: x64
       - name: mvn versione
-        run: mvn -v
+        run: mvn -version
       - name: java versione
-        run: java -v
+        run: java -version
