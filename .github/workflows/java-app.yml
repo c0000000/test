@@ -1,0 +1,22 @@
+name: java-app
+run-name: java-app workflow
+on: 
+  push:
+    paths:
+      - 'java-app/**'
+jobs:
+  action-environment-debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Java-app Test run
+        run: | 
+          date
+          ls -la
+          pwd 
+          echo "CIAO---------------------------------"
+          env
+      - name: mvn versione
+        run: mvn -v
+      - name: java versione
+        run: java -v
