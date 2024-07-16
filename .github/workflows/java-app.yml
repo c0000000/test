@@ -29,4 +29,4 @@ jobs:
       - name: java versione
         run: java -version
       - run: mvn test 
-        working-directory: ./java-app/myapp/
+        working-directory: ./java-app/myapp
